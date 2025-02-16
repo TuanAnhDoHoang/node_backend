@@ -3,6 +3,10 @@ const path = require('path');
 const express = require('express');
 const { engine } = require('express-handlebars');
 const route = require('./routes');
+const db = require('./config/db');
+
+//connect
+db.connect();
 
 const app = express();
 const port = 3000;
