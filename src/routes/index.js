@@ -4,4 +4,5 @@ function route(app) {
     app.use('/news', newsRouter);
     app.use('/', siteController);
 }
+
 module.exports = route;
